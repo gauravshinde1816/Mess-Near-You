@@ -1,0 +1,22 @@
+<%- include ('partials/header'); -%> 
+<h1 style="text-align: center; color: white;">Enroll New Mess</h1>
+
+ <div class="container">   
+<form action="/campgrounds" method="POST">
+<div style="width: 30%; margin: 0 auto;">
+        <div class="form-group"><input class ="form-control" type="text" name="name" placeholder="name"></div>
+        <div class="form-group"><input class ="form-control" type="number" name="price" placeholder="price" min="0.00" step="1"></div>
+        <div class="form-group"><input  class ="form-control" type="text" name="image" placeholder="image url"></div>
+        <div class="form-group" style="height:auto;">
+                <textarea  class ="form-control" type="text" name="description" placeholder="description"></textarea>
+        </div>
+        
+        
+        
+        <button class="btn btn-lg btn-primary btn-block" >submit</button>
+</div>
+
+
+</form> 
+</div>
+<%- include ('partials/footer'); -%> 
